@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const fieldSize = 16
-const minesCount = 5
+const minesCount = 40
 
 const initialState = {
     fieldSize,
