@@ -10,12 +10,15 @@
     "react-redux": "^8.0.5"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "5.0.1",
     "sass": "^1.58.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
