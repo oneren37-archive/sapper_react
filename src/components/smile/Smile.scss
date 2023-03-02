@@ -1,0 +1,12 @@
+.smile {
+    width: 25px;
+    height: 25px;
+
+    background: url("https://davmedia.test.tech-mail.ru/editor_uploads/2023/02/07/minesweeper-sprites_9TPZzv3.png") no-repeat;  
+    
+    &_running {background-position: 0px -24px;}
+    &_pressed {background-position: -27px -24px;}
+    &_wondering {background-position: -54px -24px;}
+    &_win {background-position: -81px -24px;}
+    &_lose {background-position: -108px -24px;}
+}
