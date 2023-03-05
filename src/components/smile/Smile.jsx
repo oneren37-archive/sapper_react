@@ -12,7 +12,7 @@ export default function Smile() {
 
     return (
         <div 
-            className={`smile smile_${isPressed ? 'pressed' : (wonder ? 'wondering' : status)}`}
+            className={`smile smile_${isPressed ? 'pressed' : (wonder ? 'waiting' : status)}`}
             onClick={() => dispatch(restart())}
             onMouseDown={() => setIsPressed(true)}
             onMouseUp={() => setIsPressed(false)}
