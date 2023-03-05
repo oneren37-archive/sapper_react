@@ -24,8 +24,10 @@ function Cell({ i, j }) {
     const mines = useSelector(state => state.mines ? state.mines[i][j] : 0)
     const flag = useSelector(state => state.flags[i][j])
     const opened = useSelector(state => state.opened[i][j])
+    const [pressed, setPressed] = React.useState(false)
 
     const handleMouseDown = (e) => {
+        setPressed(true)
         switch(e.button) {
             case 0: 
                 flag === 0 && dispatch(setWonder(!opened))
@@ -37,6 +39,8 @@ function Cell({ i, j }) {
     }
 
     const hanleMouseUp = (e) => {
+        if (!pressed) return
+        setPressed(false)
         switch(e.button) {
             case 0: 
                 flag === 0 && dispatch(lClick([i, j]))
@@ -47,6 +51,12 @@ function Cell({ i, j }) {
                 setRPressed(false)
                 break
         }
+    }
+
+    const handleMouseLeave = (e) => {
+        dispatch(setWonder(false))
+        setRPressed(false)
+        setPressed(false)
     }
 
     return (
@@ -61,6 +71,7 @@ function Cell({ i, j }) {
             onContextMenu={(e) => e.preventDefault()}
             onMouseDown={handleMouseDown}
             onMouseUp={hanleMouseUp}
+            onMouseLeave={handleMouseLeave}
         ></div>
     )
 }

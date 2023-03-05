@@ -16,6 +16,7 @@ export default function Smile() {
             onClick={() => dispatch(restart())}
             onMouseDown={() => setIsPressed(true)}
             onMouseUp={() => setIsPressed(false)}
+            onMouseLeave={() => setIsPressed(false)}
         ></div>
     )
 }
