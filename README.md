@@ -3,6 +3,7 @@
 
 ```
 git clone https://github.com/oneren37/sapper_react.git
+cd ./sapper_react
 npm ci
 npm start
 ```
