@@ -9,34 +9,35 @@
 
     &-row {
         width: 100%;
-        height: 15px;
+        height: 30px;
 
         display: flex;
 
         &__cell {
-            width: 15px;
+            width: 30px;
             height: 100%;
 
             background: url("https://davmedia.test.tech-mail.ru/editor_uploads/2023/02/07/minesweeper-sprites_9TPZzv3.png") no-repeat;  
-            background-position: 0 -51px;
+            background-size: 278px 168px; 
+            background-position: 0 -102px;
 
-            &_0 {background-position: -17px -51px;}
-            &_1 {background-position: 0 -68px;}
-            &_2 {background-position: -17px -68px;}
-            &_3 {background-position: -34px -68px;}
-            &_4 {background-position: -51px -68px;}
-            &_5 {background-position: -68px -68px;}
-            &_6 {background-position: -85px -68px;}
-            &_7 {background-position: -102px -68px;}
-            &_8 {background-position: -119px -68px;}
+            &_0 {background-position: -34px -102px;}
+            &_1 {background-position: 0 -136px;}
+            &_2 {background-position: -34px -136px;}
+            &_3 {background-position: -68px -136px;}
+            &_4 {background-position: -102px -136px;}
+            &_5 {background-position: -136px -136px;}
+            &_6 {background-position: -170px -136px;}
+            &_7 {background-position: -204px -136px;}
+            &_8 {background-position: -238px -136px;}
 
-            &_9 {background-position: -85px -51px;}
-            &_10 {background-position: -102px -51px;}
-            &_11 {background-position: -119px -51px;}
+            &_9 {background-position: -170px -102px;}
+            &_10 {background-position: -204px -102px;}
+            &_11 {background-position: -238px -102px;}
 
-            &_flag {background-position: -34px -51px;}
-            &_question {background-position: -51px -51px;}
-            &_question-pressed {background-position: -68px -51px;}
+            &_flag {background-position: -68px -102px;}
+            &_question {background-position: -102px -102px;}
+            &_question-pressed {background-position: -136px -102px;}
             
         }
     }
