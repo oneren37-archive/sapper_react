@@ -3,7 +3,7 @@ import lClickReducer from './reducers/lClick'
 import rClickReducer from './reducers/rClick'
 
 const fieldSize = 16
-const minesCount = 4
+const minesCount = 40
 
 const initialState = {
     fieldSize,
