@@ -20,6 +20,7 @@ export default function Board() {
 function Cell({ i, j }) {
     const [rPressed, setRPressed] = React.useState(false)
     const dispatch = useDispatch()
+    const gameStatus = useSelector(state => state.gameStatus)
     const mines = useSelector(state => state.mines ? state.mines[i][j] : 0)
     const flag = useSelector(state => state.flags[i][j])
     const opened = useSelector(state => state.opened[i][j])
@@ -55,7 +56,7 @@ function Cell({ i, j }) {
                 {[`board-row__cell_${mines}`]: opened},
                 {'board-row__cell_flag': flag === 1},
                 {'board-row__cell_question': flag === 2},
-                {'board-row__cell_question-pressed': flag !== 0 && rPressed}
+                {'board-row__cell_question-pressed': gameStatus === 'running' && flag !== 0 && rPressed}
             )}
             onContextMenu={(e) => e.preventDefault()}
             onMouseDown={handleMouseDown}

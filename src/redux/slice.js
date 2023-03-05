@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const fieldSize = 16
-const minesCount = 40
+const minesCount = 4
 
 const initialState = {
     fieldSize,
@@ -35,6 +35,7 @@ export const mainSlice = createSlice({
                 for (let i = 0; i < state.fieldSize; i++) {
                     for (let j = 0; j < state.fieldSize; j++) {
                         if (state.mines[i][j] === 9) {
+                            if (state.flags[i][j] === 2) state.flags[i][j] = 0
                             state.opened[i][j] = true
                         }
                         else if (state.flags[i][j] === 1) {
