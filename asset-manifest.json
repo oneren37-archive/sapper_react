@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://oneren37.github.io/sapper_react/static/css/main.f25ff0e9.css",
-    "main.js": "https://oneren37.github.io/sapper_react/static/js/main.729a75fe.js",
+    "main.js": "https://oneren37.github.io/sapper_react/static/js/main.e756549d.js",
     "index.html": "https://oneren37.github.io/sapper_react/index.html",
     "main.f25ff0e9.css.map": "https://oneren37.github.io/sapper_react/static/css/main.f25ff0e9.css.map",
-    "main.729a75fe.js.map": "https://oneren37.github.io/sapper_react/static/js/main.729a75fe.js.map"
+    "main.e756549d.js.map": "https://oneren37.github.io/sapper_react/static/js/main.e756549d.js.map"
   },
   "entrypoints": [
     "static/css/main.f25ff0e9.css",
-    "static/js/main.729a75fe.js"
+    "static/js/main.e756549d.js"
   ]
 }
